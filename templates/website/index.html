@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<main class="main">
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero section dark-background">
+
+    <img src="{% static 'assets/img/hero-bg.jpg' %}" alt="" data-aos="fade-in">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h2> {{full_name}} </h2>
+      <p>I'm <span class="typed"
+          data-typed-items="Django expert, Developer, Freelancer, Linux Admin">Developer</span><span
+          class="typed-cursor typed-cursor--blink"></span></p>
+      <div class="social-links">
+        <a href="https://t.me/u0_105"><i class="bi bi-telegram"></i></a>
+        <a href="https://wa.me/+989160318705"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://instagram.com/ho3ein_a_larki"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/U0105"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+
+  </section><!-- /Hero Section -->
+
+</main>
+
+
+{% endblock %}
